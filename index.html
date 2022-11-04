@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./styles.css" />
+
+		<title>Frontend Mentor | Interactive pricing component</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg-image">
+			<img src="./images/bg-pattern.svg" alt="" />
+		</div>
+		<header class="header">
+			<hgroup class="header-group">
+				<h1 class="header-h1">Simple, traffic-based pricing</h1>
+				<p class="header-text">
+					Sign-up for our 30-day trial. No credit card required.
+				</p>
+			</hgroup>
+		</header>
+		<main>
+			<article class="component">
+				<section class="interaction container">
+					<p class="pageviews">
+						<span id="pageview-number">100K</span> pageviews
+					</p>
+					<input
+						type="range"
+						aria-label="Number of pageviews"
+						class="range"
+						id="range"
+						min="0"
+						max="4"
+						value="2"
+						step="1"
+						oninput="updateIndex(this.value)"
+						onchange="updateIndex(this.value)" />
+					<p class="pricing"><span id="price">$16.00</span> / month</p>
+					<div class="billing">
+						<p
+							class="billing-text"
+							id="monthly"
+							onclick="turnOffYearlyBilling()">
+							Monthly Billing
+						</p>
+						<div class="toggle-container">
+							<input
+								type="checkbox"
+								class="toggle"
+								id="toggle"
+								name="toggle"
+								onchange="toggleYearlyBilling()" />
+							<span class="ball"></span>
+						</div>
+						<label for="toggle" id="toggle-label" class="billing-text">
+							Yearly Billing
+							<span id="badge"
+								><span id="mobile-discount">-25%</span>
+								<span id="desktop-discount">25% discount</span>
+							</span>
+						</label>
+					</div>
+				</section>
+				<section class="action container">
+					<ul class="benefits">
+						<li>Unlimited websites</li>
+						<li>100% data ownership</li>
+						<li>Email reports</li>
+					</ul>
+					<a href="#" class="cta">Start my trial</a>
+				</section>
+			</article>
+		</main>
+
+		<footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://www.akshaypatel.dev">Akshay Patel</a>.
+		</footer>
+
+		<script src="./app.js"></script>
+	</body>
+</html>
