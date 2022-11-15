@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/akshaypatel99/frontend-mentor/tree/main/interactive-pricing-component](https://github.com/akshaypatel99/frontend-mentor/tree/main/interactive-pricing-component)
+- Solution URL: [https://github.com/akshaypatel99/interactive-pricing-component](https://github.com/akshaypatel99/interactive-pricing-component)
 - Live Site URL: [https://akshaypatel99.github.io/interactive-pricing-component/](https://akshaypatel99.github.io/interactive-pricing-component/)
 
 ## My process
